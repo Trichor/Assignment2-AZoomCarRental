@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/general.css">
+        <script src="../Javascript/general.js"></script>
+        <!--<script src="https://smtpjs.com/v3/smtp.js"></script>-->
+        <title>Reservation</title>
+        <link rel="icon" type="image/x-icon" href="../Images/favicon.png">
+    </head>
+    <body onload="loadCars()">
+        <div id="navBar">
+            <a href="home.html">Home</a>
+            <a class="currentPage">Reservation</a>
+        </div>
+        <div class="contentContainer">
+            <h1 style="margin: 25px;">Available Cars</h1>
+            <input type="text" id="searchCarName" placeholder="Search.."><button id="fireSearchCarName" onclick="searchCars()">Go</button>
+            <div class="carContainer" id="carContainerReservation">
+
+            </div>
+            <div id="reserveOverlay" class="overlayModel">
+                <div class="overlayModelContent">
+                    <img id="displayClickedCar">
+                    <div class="overlayModelInfoContent">
+                        Car Name: <br>
+                        <div id="displayClickedCarName"></div><br>
+                        Car Description: <br>
+                        <div id="displayClickedCarDesc"></div><br>
+                        Booking Duration: <br>
+                        <select id="displayClickedCarDuration" onchange="setEndDate()">
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                        </select><br>
+                        Start Date:<br>
+                        <input type="date" id="displayClickedCarStartDate" onchange="setEndDate()"><br>
+                        End Date:<br>
+                        <div id="displayClickedCarEndDate"></div><br>
+                        <button id="displayClickedCarSubmit">Reserve Car</button>
+                    </div>
+                </div>
+            </div>
+            <h1></h1>
+            <div class="carContainer">
+
+            </div>            
+        </div>
+
+        <script src="../Javascript/reserveCar.js">
+
+        </script>
+    </body>
+</html>

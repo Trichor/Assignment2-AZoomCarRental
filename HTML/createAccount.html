@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/general.css">
+        <script src="../Javascript/general.js"></script>
+        <title>Sign Up</title>
+        <link rel="icon" type="image/x-icon" href="../Images/favicon.png">
+    </head>
+    <body>
+        <div id="navBar">
+            <a href="home.html">Home</a>
+            <a href="reserveCar.html">Reservation</a>
+            <a href="loginAccount.html" class="rightNavBtn">Login</a>
+        </div>
+        <div class="formContainer">
+            <div class="formBox">
+                <h3>
+                    Sign Up
+                </h3>
+                <div class="form">
+                    Email:<br>
+                    <input type="email" id="signupEmail"><br>
+                    <div id="signupEmailAlert"></div><br>
+                    Password:<br>
+                    <input type="password" id="signupPassword"><br>
+                    <div id="signupPasswordAlert"></div><br>
+                    Confirm Password:<br>
+                    <input type="password" id="confirmSignupPassword"><br>
+                    <div id="confirmSignupPasswordAlert"></div><br>
+                </div>
+                <div id="alertBoxSignup"></div>
+                <button onclick="createAccount()">Sign Up</button>
+                <div>
+                    Already have an account? <a href="../HTML/loginAccount.html" id="signupLink">Login</a> 
+                </div>
+            </div>
+        </div>
+        
+        <script src="../Javascript/createAccount.js">
+            
+        </script>
+    </body>
+</html>

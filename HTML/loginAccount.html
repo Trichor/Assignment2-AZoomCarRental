@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/general.css">
+        <script src="../Javascript/general.js"></script>
+        <title>Login</title>
+        <link rel="icon" type="image/x-icon" href="../Images/favicon.png">
+    </head>
+    <body onload="">
+        <div id="navBar">
+            <a href="home.html">Home</a>
+            <a href="reserveCar.html">Reservation</a>
+            <a class="currentPage rightNavBtn">Login</a>
+        </div>
+        <div class="formContainer">
+            <div class="formBox">
+                <h3>
+                    Login
+                </h3>
+                <div class="form">
+                    Email:<br>
+                    <input type="email" id="loginEmail"><br>
+                    <div id="loginEmailAlert"></div><br>
+                    Password:<br>
+                    <input type="password" id="loginPassword"><br>
+                    <div id="loginPasswordAlert"></div><br>
+                </div>
+                <div id="alertBoxLogin"></div>
+                <button onclick="loginAccount()">Login</button>
+                <div>
+                    Don't have an account? <a href="../HTML/createAccount.html" id="signupLink">Sign up</a> 
+                </div>
+            </div>        
+        </div>
+
+        <script src="../Javascript/loginAccount.js">
+            
+        </script>
+    </body>
+</html>

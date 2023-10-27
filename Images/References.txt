@@ -1,0 +1,4 @@
+slideshow1.jpg: https://www.topgear.com/sites/default/files/2022/07/2_2.jpg
+slideshow2.jpg: https://www.topgear.com/sites/default/files/2022/07/6_0.jpg
+slideshow3.jpg: https://www.topgear.com/sites/default/files/2022/07/20.jpg?w=848&h=477
+MercedesBenzEQS.jpg, Peugeot_e_2008.jpg, VolovoXC40Recharge.jpg + Descriptions: https://www.topgear.com/car-news/electric/top-gears-top-20-electric-cars

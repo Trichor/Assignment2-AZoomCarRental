@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/general.css">
+        <script src="../Javascript/general.js"></script>
+        <title>Account</title>
+        <link rel="icon" type="image/x-icon" href="../Images/favicon.png">
+    </head>
+    <body onload="loadReservedCars()">
+        <div id="navBar">
+            <a href="home.html">Home</a>
+            <a href="reserveCar.html">Reservation</a>
+        </div>
+        <div id="accountContainer">
+            <div class="sideTab">
+                <button class="tablinks" onclick="openAccountTab(event, 'acountDetails')" id="defaultOpen">Account Details</button>
+                <button class="tablinks" onclick="openAccountTab(event, 'carReservations')">Car Reservations</button>
+            </div>
+            <div id="acountDetails" class="tabcontent">
+                <h2>Account Details</h2>
+                <div class="accountDetailsForm">
+                    Name:<br>
+                    <input type="text" id="customerName" disabled><br>
+                    <div id="customerNameAlert"></div><br>
+                    Email:<br>
+                    <input type="email" id="customerEmail" disabled><br>
+                    <div id="customerEmailAlert"></div><br>
+                    Password:<br>
+                    <input type="password" id="customerPassword" disabled><br>
+                    <div id="customerPasswordAlert"></div><br>
+                    Confirm Password:<br>
+                    <input type="password" id="customerConfirmPassword" disabled><br>
+                    <div id="customerConfirmPasswordAlert"></div><br>
+                    Phone Number:<br>
+                    <input type="number" id="customerPhone" disabled><br>
+                    <div id="customerPhoneAlert"></div><br>
+                    Credit Card:<br>
+                    <input type="password" id="customerCC" disabled><br>
+                    <div id="customerCCAlert"></div><br>
+                    <input type="checkbox" id="customerCheckbox" onclick="activeForm()"> Edit Details <br>
+                    <button onclick="saveCustomerDetails()" id="saveCustomerInfo" disabled>Save</button>
+                </div>
+            </div>
+            <div id="carReservations" class="tabcontent">
+                <h2>Car Reservations</h2>
+                <div class="carContainer" id="reservedCarList">
+
+                </div>
+                <div id="reservedCarOverlay" class="overlayModel">
+                    <div class="overlayModelContent">
+                        <img id="displayReservedCar">
+                        <div class="overlayModelInfoContent">
+                            <h2>Car Name: </h2>
+                            <div id="displayReservedCarName"></div><br>
+                            <h2>Car Description: </h2>
+                            <div id="displayReservedCarDesc"></div><br>
+                            <h2>Booking Duration: </h2>
+                            <div id="displayReservedCarDuration"></div><br>
+                            <h2>Car Return Area: </h2>
+                            <select id="displayReservedCarLocation">
+                                <option value="jeBranch">Jurong East Branch</option>
+                                <option value="dgBranch">Douby Ghaut Branch</option>
+                            </select><br>
+                            <button id="displayreservedCarSubmit">Return Car</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../Javascript/customerAccount.js">
+
+        </script>
+    </body>
+</html>

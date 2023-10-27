@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NavBar CSS*/
+
+#navBar {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+#navBar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+#navBar a:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}
+
+.currentPage{
+    background-color: #ddd;
+    color: black !important;
+}
+
+/* Form CSS */
+
+.formBox{
+    margin: auto;
+    width: 50%;
+    border: 3px solid lightblue;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.formBox h3{
+    text-align: center;
+}
+
+.form input{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0px 15px 0px;
+    border-radius: 10px;
+}
+
+.formBox button{
+    width: 100%;
+    background-color: green;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.formContainer{
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightNavBtn{
+    float: right !important;
+}
+
+/*slideshow CSS*/
+.slideshowContainer {
+    position: relative;
+    margin: auto;
+    background: black;
+    overflow: hidden;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img{
+    width: 100%;
+    max-height: 690px;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#slideOverlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#slideOverlay button{
+    min-width: 20%;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*Account Sidetab CSS*/
+#accountContainer {
+    height:94hv;
+}
+
+.sideTab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 25%;
+    height: 93vh;
+}
+  
+.sideTab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    height: 50%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+.sideTab button:hover {
+    background-color: #ddd;
+}
+  
+.sideTab button.active {
+    background-color: #ccc;
+}
+  
+.tabcontent {
+    float: left;
+    padding: 0px 25px;
+    border: 1px solid #ccc;
+    width: 75%;
+    border-left: none;
+    height: 93.5vh;
+    overflow: scroll;
+}
+
+.accountDetailsForm input{
+    margin: 15px 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*Reservation CSS*/
+.contentContainer {
+    padding: 0px 100px;
+}
+
+#searchCarName {
+    width: 90%;
+    padding: 14px;
+    margin: 10px 0px;
+}
+
+#fireSearchCarName {
+    width: 10%;
+    padding: 14px 0px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.carContainer {
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.carCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 250px;
+    margin: 10px;
+}
+  
+.carCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.carDetails {
+    padding: 15px;
+}
+
+.overlayModel {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+  
+.overlayModelContent {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.overlayModelContent img {
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.overlayModelInfoContent {
+    padding: 20px;
+}
+
+.overlayModelInfoContent input{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.overlayModelInfoContent select {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.overlayModelInfoContent button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+  
+
+/*responsive Screen CSS*/
+@media screen and (max-width: 600px) {
+    #navBar a {
+        float: none;
+        display: block;
+        color: #f2f2f2;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    #searchCarName, #fireSearchCarName {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .sideTab {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .tabcontent {
+        width: 100%;
+    }
+      
+}
